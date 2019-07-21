@@ -1,24 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WS0-vZ-OA9">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Page Control View Controller-->
+        <scene sceneID="iNz-ZJ-2Ra">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="WS0-vZ-OA9" customClass="PageControlViewController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="40i-BY-T8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-729" y="134"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="screenOne" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Scan" translatesAutoresizingMaskIntoConstraints="NO" id="6Iy-hf-ixz">
+                                <rect key="frame" x="59" y="244" width="297" height="217"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWo-pi-k85">
+                                <rect key="frame" x="107" y="526" width="204" height="91"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Capture and Learn all things around You">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="SFProText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" paragraphSpacing="3" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="left aktif" translatesAutoresizingMaskIntoConstraints="NO" id="x8c-Rd-amc">
+                                <rect key="frame" x="115" y="695" width="185" height="10"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YWo-pi-k85" firstAttribute="top" secondItem="6Iy-hf-ixz" secondAttribute="bottom" constant="65" id="AV2-BZ-iex"/>
+                            <constraint firstItem="YWo-pi-k85" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="H64-29-T5f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YWo-pi-k85" secondAttribute="trailing" constant="103" id="HrW-qb-f7e"/>
+                            <constraint firstItem="x8c-Rd-amc" firstAttribute="top" secondItem="YWo-pi-k85" secondAttribute="bottom" constant="78" id="Qx0-4X-NfV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o3H-52-Sx9">
+            <objects>
+                <viewController storyboardIdentifier="screenTwo" id="HMh-cY-u5f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QBr-rQ-7q4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="middle aktif" translatesAutoresizingMaskIntoConstraints="NO" id="toh-XW-zAD">
+                                <rect key="frame" x="115" y="695" width="185" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Discover" translatesAutoresizingMaskIntoConstraints="NO" id="qb2-Dv-B4k">
+                                <rect key="frame" x="63" y="243" width="290" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hio-30-mJt">
+                                <rect key="frame" x="96" y="530" width="222" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Not just learn, explore some new place near You">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" paragraphSpacing="3" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UNe-Zn-LMC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7P-TI-kgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830.43478260869574" y="136.60714285714286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CE0-xC-Od7">
+            <objects>
+                <viewController storyboardIdentifier="screenThree" id="iMH-sT-kd2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q37-9C-OIG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0O-F2-vua">
+                                <rect key="frame" x="154" y="791" width="107" height="36"/>
+                                <state key="normal" title="Button" image="button"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right aktif" translatesAutoresizingMaskIntoConstraints="NO" id="9cb-6x-fE4">
+                                <rect key="frame" x="115" y="688" width="185" height="17"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Information" translatesAutoresizingMaskIntoConstraints="NO" id="s9T-wt-raK">
+                                <rect key="frame" x="2" y="134" width="410" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghD-A8-2pG">
+                                <rect key="frame" x="91" y="590.5" width="238" height="20.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Discover the Information, and Have fun with a new way of learning new place !">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" paragraphSpacing="3" paragraphSpacingBefore="3" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9cb-6x-fE4" firstAttribute="leading" secondItem="lMa-4i-0ml" secondAttribute="leading" constant="115" id="59M-c2-eJG"/>
+                            <constraint firstItem="p0O-F2-vua" firstAttribute="top" secondItem="9cb-6x-fE4" secondAttribute="bottom" constant="86" id="8fx-n8-eh7"/>
+                            <constraint firstItem="lMa-4i-0ml" firstAttribute="trailing" secondItem="p0O-F2-vua" secondAttribute="trailing" constant="153" id="LeA-bN-Xrl"/>
+                            <constraint firstItem="9cb-6x-fE4" firstAttribute="top" secondItem="ghD-A8-2pG" secondAttribute="bottom" constant="77" id="U38-QR-Otf"/>
+                            <constraint firstItem="p0O-F2-vua" firstAttribute="leading" secondItem="lMa-4i-0ml" secondAttribute="leading" constant="154" id="Y9S-f3-bqN"/>
+                            <constraint firstItem="lMa-4i-0ml" firstAttribute="bottom" secondItem="p0O-F2-vua" secondAttribute="bottom" constant="35" id="ed5-A7-JcP"/>
+                            <constraint firstItem="lMa-4i-0ml" firstAttribute="trailing" secondItem="9cb-6x-fE4" secondAttribute="trailing" constant="114" id="npN-SU-d4P"/>
+                            <constraint firstItem="p0O-F2-vua" firstAttribute="top" secondItem="9cb-6x-fE4" secondAttribute="bottom" constant="86" id="yxR-xE-mBn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lMa-4i-0ml"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0h9-T8-biH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517.3913043478262" y="136.60714285714286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Discover" width="249" height="240"/>
+        <image name="Information" width="224" height="430"/>
+        <image name="Scan" width="220" height="220"/>
+        <image name="button" width="107" height="36"/>
+        <image name="left aktif" width="86" height="17"/>
+        <image name="middle aktif" width="87" height="17"/>
+        <image name="right aktif" width="86" height="17"/>
+    </resources>
 </document>
